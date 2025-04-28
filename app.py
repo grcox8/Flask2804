@@ -13,3 +13,7 @@ def hasta_luego():
 @app.route("/bv")
 def bienvenido():
     return "<p>Bienvenido!</p>"
+
+@app.route("/hn/<string:hola>/<string:nombre>")
+def hola_nombre(hola,nombre):
+    return f"{hola},{nombre}"
